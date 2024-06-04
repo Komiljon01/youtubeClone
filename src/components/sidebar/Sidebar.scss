@@ -1,0 +1,32 @@
+#sidebar {
+  display: flex;
+  flex-direction: column;
+
+  .sidebar__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 59px;
+    margin-top: 59px;
+  }
+
+  .sidebar__logo {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+
+  .settings {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 45px;
+
+    p {
+      transition: color 0.3s ease;
+    }
+
+    &:hover p {
+      color: #ff0000;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.sidebar__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+
+  .sidebar__category {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    & img,
+    & p {
+      transition: color 0.3s ease;
+    }
+
+    &:hover img,
+    &:hover p {
+      color: #ff0000;
+    }
+
+    &:nth-child(1) p {
+      color: #ff0000;
+    }
+
+    &:nth-child(4) {
+      margin-top: 31px;
+    }
+  }
+}

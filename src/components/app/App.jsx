@@ -1,7 +1,12 @@
+import Sidebar from "../sidebar/Sidebar";
 import "./App.scss";
 
 function App() {
-  return <h1>YouTube Clone</h1>;
+  return (
+    <div className="app">
+      <Sidebar />
+    </div>
+  );
 }
 
 export default App;
