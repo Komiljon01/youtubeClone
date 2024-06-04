@@ -1,7 +1,11 @@
 #content {
   width: 100%;
   overflow-x: scroll;
-  //   border: 1px solid red;
+
+  &::-webkit-scrollbar {
+    height: 0px;
+  }
+
   .content__navbar {
     display: flex;
     align-items: center;
@@ -74,6 +78,119 @@
     }
 
     .user__videos-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .left-control,
+      .right-control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background: rgb(0, 0, 0);
+        opacity: 0.24;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #ff0000;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .recommended__content {
+    margin: 50px 0;
+  }
+
+  .recommended__content-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 149px;
+
+    h2 {
+      color: rgb(25, 32, 44);
+      font-size: 26px;
+      font-weight: 700;
+      line-height: -1px;
+      letter-spacing: 0px;
+    }
+
+    .recommended__videos-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .left-control,
+      .right-control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background: rgb(0, 0, 0);
+        opacity: 0.24;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #ff0000;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .foodDrink__content-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 149px;
+
+    .foodDrink__content-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      h2 {
+        color: rgb(25, 32, 44);
+        font-size: 26px;
+        font-weight: 700;
+        line-height: -1px;
+        letter-spacing: 0px;
+      }
+
+      p {
+        color: rgb(194, 194, 194);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: -1px;
+        letter-spacing: 0px;
+      }
+    }
+
+    .subscribe-btn {
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: -1px;
+      letter-spacing: 0px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: rgb(255, 0, 0);
+      margin-right: 30px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgb(226, 10, 10);
+      }
+    }
+
+    .foodDrink__videos-controls {
       display: flex;
       align-items: center;
       gap: 10px;

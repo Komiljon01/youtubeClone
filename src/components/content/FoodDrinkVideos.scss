@@ -1,4 +1,4 @@
-.user__videos {
+.foodDrink__videos {
   display: grid;
   grid-template-columns: repeat(6, 250px);
   align-items: center;
@@ -20,7 +20,7 @@
     border-radius: 10px;
   }
 
-  .user__video-content {
+  .foodDrink__video-content {
     position: relative;
 
     span {
@@ -34,7 +34,7 @@
     }
   }
 
-  .user__video-text {
+  .foodDrink__video-text {
     margin-bottom: 10px;
     h2 {
       color: rgb(25, 32, 44);
@@ -46,7 +46,7 @@
       margin-bottom: 4px;
     }
 
-    .user__video-descr {
+    .foodDrink__video-descr {
       display: flex;
       align-items: center;
       justify-content: space-between;

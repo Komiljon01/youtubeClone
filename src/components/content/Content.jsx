@@ -8,6 +8,9 @@ import user from "../../assets/images/dollie.png";
 import leftIcon from "../../assets/icons/left.png";
 import rightIcon from "../../assets/icons/right.png";
 import UserVideos from "./User-videos";
+import Recommend from "./Recommend";
+import foodDrinkImg from "../../assets/images/food-logo.png";
+import FoodDrinkVideos from "./FoodDrinkVideos";
 
 const Content = () => {
   return (
@@ -64,6 +67,47 @@ const Content = () => {
           </div>
 
           <UserVideos />
+        </div>
+
+        <div className="recommended__content">
+          <div className="recommended__content-intro">
+            <h2>Recommended</h2>
+
+            <div className="recommended__videos-controls">
+              <a href="/" className="left-control">
+                <img src={leftIcon} alt="left" />
+              </a>
+              <a href="/" className="right-control">
+                <img src={rightIcon} alt="right" />
+              </a>
+            </div>
+          </div>
+
+          <Recommend />
+        </div>
+
+        <div className="foodDrink__content">
+          <div className="foodDrink__content-intro">
+            <div className="foodDrink__content-info">
+              <img src={foodDrinkImg} alt="foodDrink img" />
+              <h2>Food & Drink</h2>
+              <p>Recommended channel for you</p>
+            </div>
+
+            <div className="foodDrink__videos-controls">
+              <a href="/" className="subscribe-btn">
+                Subscribe 2.3m
+              </a>
+              <a href="/" className="left-control">
+                <img src={leftIcon} alt="left" />
+              </a>
+              <a href="/" className="right-control">
+                <img src={rightIcon} alt="right" />
+              </a>
+            </div>
+          </div>
+
+          <FoodDrinkVideos />
         </div>
       </div>
     </div>
