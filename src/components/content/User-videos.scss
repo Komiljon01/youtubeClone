@@ -1,0 +1,49 @@
+.user__videos {
+  display: grid;
+  grid-template-columns: repeat(6, 250px);
+  align-items: center;
+  gap: 40px;
+  overflow-x: scroll;
+  margin-top: 30px;
+
+  .user__video-content {
+    position: relative;
+
+    span {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      border-radius: 12px;
+      background: rgb(0, 0, 0, 0.3);
+      color: #fff;
+      padding: 3px 9px;
+    }
+  }
+
+  .user__video-text {
+    margin-bottom: 10px;
+    h2 {
+      color: rgb(25, 32, 44);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: -1px;
+      letter-spacing: 0px;
+      margin-top: 10px;
+      margin-bottom: 4px;
+    }
+
+    .user__video-descr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: rgb(194, 194, 194);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: -1px;
+        letter-spacing: 0px;
+      }
+    }
+  }
+}
